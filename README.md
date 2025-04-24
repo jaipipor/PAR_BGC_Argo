@@ -48,7 +48,7 @@ Contributions are welcome! Please open an issue or submit a pull request to sugg
 | Version | Location | Key Differences |
 |---------|----------|-----------------|
 | MATLAB  | `/MATLAB` | Original algorithm |
-| Python  | `/o25` | Open-source, NumPy/SciPy port |
+| Python  | `/src` | Open-source, NumPy/SciPy port |
 
 ---
 
