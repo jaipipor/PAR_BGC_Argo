@@ -2,7 +2,10 @@
 
 Code routines to calculate PAR from multispectral irradiance profiles
 Implements a method that delivers unbiased PAR estimates, based on two-layer neural networks, formulable in a small number of matrix equations, and thus exportable to any software platform. The method was calibrated with a dataset of hyperspectral acquired by new types of BioGeoChemical (BGC)-Argo floats deployed in a variety of open ocean locations, representative of a wide range of bio-optical properties. This procedure was repeated for several band configurations, including those existing on multispectral radiometers presently the standard for the BGC-Argo fleet. Validation results against independent data were highly satisfactory, displaying minimal uncertainties across a wide PAR range.
-
+This release refines the previous one, described in the L&O Methods publication.
+In the previous release, an increased error between the modeled and the reference PAR was acknowledged for the highest part of the range. No systematic traits were identified. However, when plotting such errors against depth, the pattern is quite systematic. Therefore, such remaining biased has been quantified and removed in this release. As a consequence, depth is now an input value.
+In the previous release, the PAR range had been not properly delimited, and took all available wavelengths in the calibration dataset, which were ~ 330 nm to 780 nm. This might have caused a bias in the algorithm calibration. Such issue has been solved in this release, by delimiting PAR calculations to the range 400 nm to 700 nm.
+Furthermore, in addition to all four band configurations of the previous release, a fifth one, for the bands 380, 443, 490 and 560 nm has been created.
 ---
 
 ## 🚀 Main Features
