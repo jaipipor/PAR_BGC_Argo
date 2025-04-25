@@ -20,6 +20,25 @@ Furthermore, in addition to all four band configurations of the previous release
 
 ---
 
+## 💻 Installation
+
+### Option 1: Install from PyPI (recommended)
+```bash
+pip install par-bgc-argo-pitarch
+```
+
+### Option 2: Install directly from GitHub
+```bash
+pip install git+https://github.com/jaipipor/PAR_BGC_Argo.git
+```
+
+### Option 3: Install for development
+```bash
+git clone https://github.com/jaipipor/PAR_BGC_Argo.git
+cd PAR_BGC_Argo
+pip install -e .
+```
+
 ## 📚 Basic Usage
 
 Please refer to the help provided inside each function
