@@ -5,7 +5,8 @@ on:
     types: [published]
 
 permissions:
-  id-token: write
+  id-token: write  # Required for OIDC
+  contents: read   # Required for checkout
   
 jobs:
   build-and-publish:
