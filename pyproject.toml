@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "par-bgc-argo-pitarch"
+version = "0.1.0"
+authors = [{ name = "Your Name", email = "jaime.pitarch@cnr.it" }]
+description = "PAR BGC Argo data processing"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+dependencies = [  # MOVED TO HERE
+    "numpy",
+    "scipy"
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+[tool.setuptools]
+packages = ["par_bgc_argo_pitarch"]  # ONLY package discovery config here
+
+[project.urls]
+"Homepage" = "https://github.com/jaipipor/PAR_BGC_Argo"
+"Repository" = "https://github.com/jaipipor/PAR_BGC_Argo"
